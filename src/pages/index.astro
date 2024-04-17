@@ -7,8 +7,8 @@ import Layout from "../layouts/Layout.astro";
     <!-- lol -->
     <section id="page">
       <div class="space-y-4 text-center divide-y dark:divide-gray-700">
-        <section id="page">
-          <div id="card" class="relative">
+        <section id="card">
+          <div class="relative">
             <div
               class="flex h-full rounded-md border border-gray-800 bg-gradient-to-b from-gray-950 to-black px-3 py-2"
             >
@@ -312,16 +312,26 @@ import Layout from "../layouts/Layout.astro";
                     </div>
                   </p>
                   <section class="mt-2" id="urls">
-                    <a href="https://github.com/gdeVanezus" class='hover:bg-gray-900 inline-flex items-center justify-center rounded-full border border-gray-800 bg-gray-950 px-2 py-1 text-xs font-medium text-gray-300 backdrop-blur-3xl'>
+                    <a
+                      href="https://github.com/gdeVanezus"
+                      class="hover:bg-gray-900 inline-flex items-center justify-center rounded-full border border-gray-800 bg-gray-950 px-2 py-1 text-xs font-medium text-gray-300 backdrop-blur-3xl"
+                    >
                       <i class="fa-brands fa-github text-2xl"></i>
                     </a>
-                    <a href="https://discord.com/users/1105120003197522000" class='hover:bg-gray-900 inline-flex items-center justify-center rounded-full border border-gray-800 bg-gray-950 px-1 py-1 text-xs font-medium text-gray-300 backdrop-blur-3xl'>
+                    <a
+                      href="https://discord.com/users/1105120003197522000"
+                      class="hover:bg-gray-900 inline-flex items-center justify-center rounded-full border border-gray-800 bg-gray-950 px-1 py-1 text-xs font-medium text-gray-300 backdrop-blur-3xl"
+                    >
                       <i class="fa-brands fa-discord text-2xl"></i>
                     </a>
-                    <a href="https://t.me/gdeVanezus" class='hover:bg-gray-900 inline-flex items-center justify-center rounded-full border border-gray-800 bg-gray-950 px-2 py-1 text-xs font-medium text-gray-300 backdrop-blur-3xl'>
+                    <a
+                      href="https://t.me/gdeVanezus"
+                      class="hover:bg-gray-900 inline-flex items-center justify-center rounded-full border border-gray-800 bg-gray-950 px-2 py-1 text-xs font-medium text-gray-300 backdrop-blur-3xl"
+                    >
                       <i class="fa-brands fa-telegram text-2xl"></i>
                     </a>
                   </section>
+                </section>
               </section>
             </div>
           </div>
@@ -329,10 +339,10 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </section>
   </main>
-</Layout>
 
-<style>
-  .fontj {
-    font-family: "Josefin Sans", sans-serif;
-  }
-</style>
+  <style>
+    .fontj {
+      font-family: "Josefin Sans", sans-serif;
+    }
+  </style>
+</Layout>
