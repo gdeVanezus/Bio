@@ -4,9 +4,21 @@ import Layout from "../layouts/Layout.astro";
 
 const languages = [
   { name: "Python", icon: "devicon-python-plain", url: "https://python.org/" },
-  { name: "JavaScript", icon: "devicon-javascript-plain", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-  { name: "TypeScript", icon: "devicon-typescript-plain", url: "https://typescriptlang.org/" },
-  { name: "Rust", icon: "devicon-rust-plain", url: "https://www.rust-lang.org/" },
+  {
+    name: "JavaScript",
+    icon: "devicon-javascript-plain",
+    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    name: "TypeScript",
+    icon: "devicon-typescript-plain",
+    url: "https://typescriptlang.org/",
+  },
+  {
+    name: "Rust",
+    icon: "devicon-rust-plain",
+    url: "https://www.rust-lang.org/",
+  },
   { name: "Lua", icon: "devicon-lua-plain", url: "https://lua.org/" },
   { name: "Java", icon: "devicon-java-plain", url: "https://java.com/" },
   { name: "Go", icon: "devicon-go-plain", url: "https://go.dev/" },
@@ -17,21 +29,45 @@ const frameworks = [
   { name: "Next.js", icon: "devicon-nextjs-plain", url: "https://nextjs.org/" },
   { name: "Nuxt.js", icon: "devicon-nuxtjs-plain", url: "https://nuxt.com/" },
   { name: "Astro", icon: "devicon-astro-plain", url: "https://astro.build/" },
-  { name: "Discord.js", icon: "devicon-discordjs-plain", url: "https://discord.js.org/" },
+  {
+    name: "Discord.js",
+    icon: "devicon-discordjs-plain",
+    url: "https://discord.js.org/",
+  },
   { name: "Node.js", icon: "devicon-nodejs-plain", url: "https://nodejs.org/" },
-  { name: "Tailwind CSS", icon: "devicon-tailwindcss-original", url: "https://tailwindcss.com/" },
-  { name: "Flask", icon: "devicon-flask-plain", url: "https://flask.palletsprojects.com/" },
+  {
+    name: "Tailwind CSS",
+    icon: "devicon-tailwindcss-original",
+    url: "https://tailwindcss.com/",
+  },
+  {
+    name: "Flask",
+    icon: "devicon-flask-plain",
+    url: "https://flask.palletsprojects.com/",
+  },
 ];
 
 const tools = [
-  { name: "Cloudflare", icon: "devicon-cloudflare-plain", url: "https://cloudflare.com/" },
+  {
+    name: "Cloudflare",
+    icon: "devicon-cloudflare-plain",
+    url: "https://cloudflare.com/",
+  },
   { name: "GitHub", icon: "devicon-github-plain", url: "https://github.com/" },
-  { name: "VS Code", icon: "devicon-vscode-plain", url: "https://code.visualstudio.com/" },
-  { name: "Visual Studio", icon: "devicon-visualstudio-plain", url: "https://visualstudio.com/" },
+  {
+    name: "VS Code",
+    icon: "devicon-vscode-plain",
+    url: "https://code.visualstudio.com/",
+  },
+  {
+    name: "Visual Studio",
+    icon: "devicon-visualstudio-plain",
+    url: "https://visualstudio.com/",
+  },
   { name: "Docker", icon: "devicon-docker-plain", url: "https://docker.com/" },
 ];
 ---
-    
+
 <Layout title="Vanezus">
   <main>
     <!-- lol -->
@@ -45,13 +81,19 @@ const tools = [
               >
                 <section class="p-4 mx-auto" id="card-body">
                   <div class="mb-4">
-                    <div class="bg-red-500/30 border border-red-400 text-gray-100 rounded flex items-center" role="alert">
-                      <i class="fa-solid fa-triangle-exclamation text-4xl py-2 ml-2"></i>
-                      <span class="block sm:inline font-bold text-center mx-auto">New discord: vanezus.yml</span>
+                    <div
+                      class="bg-red-500/30 border border-red-400 text-gray-100 rounded flex items-center"
+                      role="alert"
+                    >
+                      <i
+                        class="fa-solid fa-triangle-exclamation text-4xl py-2 ml-2"
+                      ></i>
+                      <span
+                        class="block sm:inline font-bold text-center mx-auto"
+                        >New discord: vanezus.yml</span
+                      >
                     </div>
                   </div>
-                  
-
                   <p class="text-2xl font-bold text-gray-200 fontj">Vanezus</p>
                   <div
                     class="h-px max-w-6xl mx-auto"
@@ -97,8 +139,7 @@ const tools = [
                         <path
                           stroke-linecap="round"
                           stroke-linejoin="round"
-                          d="M4.867 19.125h.008v.008h-.008v-.008Z"
-                        ></path>
+                          d="M4.867 19.125h.008v.008h-.008v-.008Z"></path>
                       </svg>
                       Backend
                     </span>
@@ -163,16 +204,18 @@ const tools = [
                             class="overflow-auto animate-fade mx-auto grid grid-cols-4 mt-2 mb-2 gap-3"
                             id="lang-badges"
                           >
-                            {languages.map(lang => (
-                              <a
-                                href={lang.url}
-                                target="_blank"
-                                class="h-full cursor-pointer rounded-md border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] bg-[length:250%_100%] px-3 py-1 text-xs font-medium hover:bg-[length:220%_100%] text-gray-300"
-                                title={lang.name}
-                              >
-                                <i class={`${lang.icon} text-2xl`}></i>
-                              </a>
-                            ))}
+                            {
+                              languages.map((lang) => (
+                                <a
+                                  href={lang.url}
+                                  target="_blank"
+                                  class="h-full cursor-pointer rounded-md border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] bg-[length:250%_100%] px-3 py-1 text-xs font-medium hover:bg-[length:220%_100%] text-gray-300"
+                                  title={lang.name}
+                                >
+                                  <i class={`${lang.icon} text-2xl`} />
+                                </a>
+                              ))
+                            }
                           </section>
                         </p>
                       </div>
@@ -188,16 +231,18 @@ const tools = [
                             class="overflow-auto animate-fade mx-auto grid grid-cols-4 mt-2 mb-2 gap-3"
                             id="libs-badges"
                           >
-                            {frameworks.map(lib => (
-                              <a
-                                href={lib.url}
-                                target="_blank"
-                                class="h-full cursor-pointer rounded-md border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] bg-[length:250%_100%] px-3 py-1 text-xs font-medium hover:bg-[length:220%_100%] text-gray-300"
-                                title={lib.name}
-                              >
-                                <i class={`${lib.icon} text-2xl`}></i>
-                              </a>
-                            ))}
+                            {
+                              frameworks.map((lib) => (
+                                <a
+                                  href={lib.url}
+                                  target="_blank"
+                                  class="h-full cursor-pointer rounded-md border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] bg-[length:250%_100%] px-3 py-1 text-xs font-medium hover:bg-[length:220%_100%] text-gray-300"
+                                  title={lib.name}
+                                >
+                                  <i class={`${lib.icon} text-2xl`} />
+                                </a>
+                              ))
+                            }
                           </section>
                         </p>
                       </div>
@@ -213,16 +258,18 @@ const tools = [
                             class="overflow-auto animate-fade mx-auto grid grid-cols-4 mt-2 mb-2 gap-3"
                             id="tools-badges"
                           >
-                            {tools.map(tool => (
-                              <a
-                                href={tool.url}
-                                target="_blank"
-                                class="h-full cursor-pointer rounded-md border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] bg-[length:250%_100%] px-3 py-1 text-xs font-medium hover:bg-[length:220%_100%] text-gray-300"
-                                title={tool.name}
-                              >
-                                <i class={`${tool.icon} text-2xl`}></i>
-                              </a>
-                            ))}
+                            {
+                              tools.map((tool) => (
+                                <a
+                                  href={tool.url}
+                                  target="_blank"
+                                  class="h-full cursor-pointer rounded-md border border-gray-800 bg-[linear-gradient(110deg,#000,45%,#4D4B4B,55%,#000)] bg-[length:250%_100%] px-3 py-1 text-xs font-medium hover:bg-[length:220%_100%] text-gray-300"
+                                  title={tool.name}
+                                >
+                                  <i class={`${tool.icon} text-2xl`} />
+                                </a>
+                              ))
+                            }
                           </section>
                         </p>
                       </div>
@@ -268,7 +315,6 @@ const tools = [
         </section>
       </div>
     </section>
-
     <style>
       .fontj {
         font-family: "Josefin Sans", sans-serif;
